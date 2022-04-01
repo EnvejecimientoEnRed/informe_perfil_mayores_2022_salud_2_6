@@ -1,0 +1,257 @@
+Edad,Enfermedades,enfermedad_2,total,hombres,mujeres
+De 15 a 24 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,13.92,14.02,13.81
+De 25 a 34 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,12.72,12.12,13.33
+De 35 a 44 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,11.74,9.95,13.54
+De 45 a 54 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,12.19,10.06,14.33
+De 55 a 64 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,10.91,7.41,14.25
+De 65 a 74 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,8.99,6.96,10.69
+De 75 a 84 años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,8.32,7.61,8.92
+De 85 y más años,Alergia crónica. como rinitis. conjuntivitis o dermatitis alérgica. alergia alimentaria o de otro tipo (asma alérgica excluida),alergia_cronica,6.43,3.44,8.03
+De 15 a 24 años,Angina de pecho. enfermedad coronaria,angina_pecho,0.04,0,0.07
+De 25 a 34 años,Angina de pecho. enfermedad coronaria,angina_pecho,0.06,0,0.12
+De 35 a 44 años,Angina de pecho. enfermedad coronaria,angina_pecho,0.01,0.02,0
+De 45 a 54 años,Angina de pecho. enfermedad coronaria,angina_pecho,0.36,0.34,0.38
+De 55 a 64 años,Angina de pecho. enfermedad coronaria,angina_pecho,1.14,1.86,0.45
+De 65 a 74 años,Angina de pecho. enfermedad coronaria,angina_pecho,1.44,1.96,0.99
+De 75 a 84 años,Angina de pecho. enfermedad coronaria,angina_pecho,2.48,2.45,2.51
+De 85 y más años,Angina de pecho. enfermedad coronaria,angina_pecho,3.12,3.05,3.16
+De 15 a 24 años,Ansiedad crónica,ansiedad_cronica,3.08,2.07,4.15
+De 25 a 34 años,Ansiedad crónica,ansiedad_cronica,4.39,2.81,5.97
+De 35 a 44 años,Ansiedad crónica,ansiedad_cronica,5.31,4.25,6.36
+De 45 a 54 años,Ansiedad crónica,ansiedad_cronica,7.5,5,10.01
+De 55 a 64 años,Ansiedad crónica,ansiedad_cronica,8.1,4.83,11.22
+De 65 a 74 años,Ansiedad crónica,ansiedad_cronica,8.42,4.44,11.76
+De 75 a 84 años,Ansiedad crónica,ansiedad_cronica,7.31,2.78,11.12
+De 85 y más años,Ansiedad crónica,ansiedad_cronica,8.98,4.47,11.42
+De 15 a 24 años,Artrosis (excluyendo artritis),artrosis,0.25,0.36,0.15
+De 25 a 34 años,Artrosis (excluyendo artritis),artrosis,1.12,0.55,1.68
+De 35 a 44 años,Artrosis (excluyendo artritis),artrosis,2.94,2.44,3.44
+De 45 a 54 años,Artrosis (excluyendo artritis),artrosis,9.33,5.75,12.95
+De 55 a 64 años,Artrosis (excluyendo artritis),artrosis,21.76,13.65,29.53
+De 65 a 74 años,Artrosis (excluyendo artritis),artrosis,33.2,20.94,43.49
+De 75 a 84 años,Artrosis (excluyendo artritis),artrosis,47.17,33.27,58.88
+De 85 y más años,Artrosis (excluyendo artritis),artrosis,57.03,36.34,68.09
+De 15 a 24 años,Asma (incluida asma alérgica),asma,4.6,4.46,4.74
+De 25 a 34 años,Asma (incluida asma alérgica),asma,5.23,4.28,6.19
+De 35 a 44 años,Asma (incluida asma alérgica),asma,3.71,3.55,3.88
+De 45 a 54 años,Asma (incluida asma alérgica),asma,3.6,3.01,4.2
+De 55 a 64 años,Asma (incluida asma alérgica),asma,3.25,2.12,4.32
+De 65 a 74 años,Asma (incluida asma alérgica),asma,3.93,3.62,4.19
+De 75 a 84 años,Asma (incluida asma alérgica),asma,4.74,4.05,5.32
+De 85 y más años,Asma (incluida asma alérgica),asma,6.06,3.56,7.4
+De 15 a 24 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,0.76,0.56,0.96
+De 25 a 34 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,0.94,0.98,0.9
+De 35 a 44 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,1.23,1.05,1.4
+De 45 a 54 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,1.58,1.53,1.63
+De 55 a 64 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,3.58,3.56,3.6
+De 65 a 74 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,5.36,5.78,5
+De 75 a 84 años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,7.36,8.73,6.2
+De 85 y más años,Bronquitis crónica. enfisema. enfermedad pulmonar obstructiva crónica (EPOC),bronquitis_cronica_epoc,8.41,9.3,7.93
+De 15 a 24 años,Cataratas,cataratas,0.07,0,0.15
+De 25 a 34 años,Cataratas,cataratas,0.03,0,0.07
+De 35 a 44 años,Cataratas,cataratas,0.44,0.46,0.42
+De 45 a 54 años,Cataratas,cataratas,1.14,1.05,1.23
+De 55 a 64 años,Cataratas,cataratas,4.18,3.03,5.27
+De 65 a 74 años,Cataratas,cataratas,11.06,9.51,12.37
+De 75 a 84 años,Cataratas,cataratas,18.55,15.41,21.18
+De 85 y más años,Cataratas,cataratas,18.84,17.64,19.48
+De 15 a 24 años,Cirrosis. disfunción hepática,cirrosis,0.2,0.38,0
+De 25 a 34 años,Cirrosis. disfunción hepática,cirrosis,0.3,0,0.6
+De 35 a 44 años,Cirrosis. disfunción hepática,cirrosis,0.41,0.34,0.47
+De 45 a 54 años,Cirrosis. disfunción hepática,cirrosis,0.52,0.38,0.66
+De 55 a 64 años,Cirrosis. disfunción hepática,cirrosis,1.13,1.6,0.67
+De 65 a 74 años,Cirrosis. disfunción hepática,cirrosis,1.66,2.03,1.35
+De 75 a 84 años,Cirrosis. disfunción hepática,cirrosis,0.86,0.68,1.01
+De 85 y más años,Cirrosis. disfunción hepática,cirrosis,0.39,0.38,0.39
+De 15 a 24 años,Colesterol alto,colesterol_alto,0.4,0.53,0.25
+De 25 a 34 años,Colesterol alto,colesterol_alto,3.36,4.04,2.68
+De 35 a 44 años,Colesterol alto,colesterol_alto,6.23,7.73,4.73
+De 45 a 54 años,Colesterol alto,colesterol_alto,12.22,14.9,9.54
+De 55 a 64 años,Colesterol alto,colesterol_alto,24.97,25.34,24.61
+De 65 a 74 años,Colesterol alto,colesterol_alto,33.79,33.78,33.79
+De 75 a 84 años,Colesterol alto,colesterol_alto,35.06,34.24,35.75
+De 85 y más años,Colesterol alto,colesterol_alto,34.16,31.36,35.67
+De 15 a 24 años,Depresión,depresion,1.51,1.39,1.63
+De 25 a 34 años,Depresión,depresion,2.78,1.59,3.98
+De 35 a 44 años,Depresión,depresion,3.34,2.88,3.79
+De 45 a 54 años,Depresión,depresion,5.54,3.96,7.13
+De 55 a 64 años,Depresión,depresion,7.69,5.14,10.13
+De 65 a 74 años,Depresión,depresion,9.02,4.9,12.49
+De 75 a 84 años,Depresión,depresion,11.21,5.61,15.93
+De 85 y más años,Depresión,depresion,12.72,7.99,15.26
+De 15 a 24 años,Diabetes,diabetes,0.41,0.57,0.25
+De 25 a 34 años,Diabetes,diabetes,0.88,1.01,0.75
+De 35 a 44 años,Diabetes,diabetes,1.61,1.82,1.41
+De 45 a 54 años,Diabetes,diabetes,4.27,4.72,3.81
+De 55 a 64 años,Diabetes,diabetes,10.19,12.36,8.11
+De 65 a 74 años,Diabetes,diabetes,18.67,22.78,15.24
+De 75 a 84 años,Diabetes,diabetes,24.11,25.49,22.95
+De 85 y más años,Diabetes,diabetes,21.72,23.13,20.95
+De 15 a 24 años,Dolor de espalda crónico (cervical),dolor_cervical,2.05,0.75,3.42
+De 25 a 34 años,Dolor de espalda crónico (cervical),dolor_cervical,4.45,2.63,6.27
+De 35 a 44 años,Dolor de espalda crónico (cervical),dolor_cervical,7.6,4.54,10.65
+De 45 a 54 años,Dolor de espalda crónico (cervical),dolor_cervical,11.8,6.9,16.73
+De 55 a 64 años,Dolor de espalda crónico (cervical),dolor_cervical,18.8,12.92,24.43
+De 65 a 74 años,Dolor de espalda crónico (cervical),dolor_cervical,19.29,12.28,25.15
+De 75 a 84 años,Dolor de espalda crónico (cervical),dolor_cervical,23.61,16.35,29.72
+De 85 y más años,Dolor de espalda crónico (cervical),dolor_cervical,27.77,19.35,32.29
+De 15 a 24 años,Dolor de espalda crónico (lumbar),dolor_lumbar,2.67,1.34,4.08
+De 25 a 34 años,Dolor de espalda crónico (lumbar),dolor_lumbar,5.93,4.67,7.2
+De 35 a 44 años,Dolor de espalda crónico (lumbar),dolor_lumbar,8.96,8.56,9.36
+De 45 a 54 años,Dolor de espalda crónico (lumbar),dolor_lumbar,14.68,11.64,17.73
+De 55 a 64 años,Dolor de espalda crónico (lumbar),dolor_lumbar,21.44,16.23,26.44
+De 65 a 74 años,Dolor de espalda crónico (lumbar),dolor_lumbar,22.69,16.07,28.24
+De 75 a 84 años,Dolor de espalda crónico (lumbar),dolor_lumbar,29.15,22.57,34.69
+De 85 y más años,Dolor de espalda crónico (lumbar),dolor_lumbar,32.4,23.81,37.02
+De 15 a 24 años,Estreñimiento crónico,estrenimiento_cronico,0.82,0.49,1.16
+De 25 a 34 años,Estreñimiento crónico,estrenimiento_cronico,1.45,0.58,2.31
+De 35 a 44 años,Estreñimiento crónico,estrenimiento_cronico,1.6,0.78,2.42
+De 45 a 54 años,Estreñimiento crónico,estrenimiento_cronico,2.23,0.59,3.88
+De 55 a 64 años,Estreñimiento crónico,estrenimiento_cronico,3.59,1.18,5.89
+De 65 a 74 años,Estreñimiento crónico,estrenimiento_cronico,5.81,2.8,8.33
+De 75 a 84 años,Estreñimiento crónico,estrenimiento_cronico,8.42,6.06,10.42
+De 85 y más años,Estreñimiento crónico,estrenimiento_cronico,10.79,9.63,11.42
+De 15 a 24 años,Hemorroides,hemorroides,0.42,0.41,0.43
+De 25 a 34 años,Hemorroides,hemorroides,1.31,1.01,1.62
+De 35 a 44 años,Hemorroides,hemorroides,2.78,1.91,3.65
+De 45 a 54 años,Hemorroides,hemorroides,3.74,2.42,5.07
+De 55 a 64 años,Hemorroides,hemorroides,5.22,3.5,6.86
+De 65 a 74 años,Hemorroides,hemorroides,6.16,4.76,7.32
+De 75 a 84 años,Hemorroides,hemorroides,5.89,4.59,7
+De 85 y más años,Hemorroides,hemorroides,6.42,3.97,7.74
+De 15 a 24 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,0,0,0
+De 25 a 34 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,0,0,0
+De 35 a 44 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,0.19,0,0.38
+De 45 a 54 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,0.43,0.34,0.52
+De 55 a 64 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,0.61,0.6,0.63
+De 65 a 74 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,1.11,1.42,0.85
+De 75 a 84 años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,2.75,2.22,3.2
+De 85 y más años,Ictus (embolia. infarto cerebral. hemorragia cerebral),ictus,4.14,3.88,4.29
+De 15 a 24 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,0.4,0,0.82
+De 25 a 34 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,0.31,0.25,0.37
+De 35 a 44 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,1.1,0.59,1.61
+De 45 a 54 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,1.13,0.42,1.85
+De 55 a 64 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,3.45,2.59,4.28
+De 65 a 74 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,6.24,4.82,7.43
+De 75 a 84 años,Incontinencia urinaria o problemas de control de la orina,incontinencia,13.3,10.31,15.82
+De 85 y más años,Incontinencia urinaria o problemas de control de la orina,incontinencia,24.83,17.01,29.04
+De 15 a 24 años,Infarto de miocardio,infarto_miocardio,0,0,0
+De 25 a 34 años,Infarto de miocardio,infarto_miocardio,0,0,0
+De 35 a 44 años,Infarto de miocardio,infarto_miocardio,0.09,0.01,0.16
+De 45 a 54 años,Infarto de miocardio,infarto_miocardio,0.52,0.85,0.18
+De 55 a 64 años,Infarto de miocardio,infarto_miocardio,1,1.48,0.54
+De 65 a 74 años,Infarto de miocardio,infarto_miocardio,1.2,2.2,0.36
+De 75 a 84 años,Infarto de miocardio,infarto_miocardio,2.84,4.26,1.64
+De 85 y más años,Infarto de miocardio,infarto_miocardio,2.72,4.38,1.83
+De 15 a 24 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,0.94,0.94,0.93
+De 25 a 34 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,2.22,2.09,2.35
+De 35 a 44 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,2.82,3.83,1.81
+De 45 a 54 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,3.46,4.4,2.51
+De 55 a 64 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,3.98,4.64,3.35
+De 65 a 74 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,2.65,2.55,2.73
+De 75 a 84 años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,3.71,3.11,4.22
+De 85 y más años,Lesiones o defectos permanentes causados por un accidente,lesiones_por_accidente,3.38,3.11,3.52
+De 15 a 24 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,6.41,3.5,9.49
+De 25 a 34 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,8.81,5.04,12.6
+De 35 a 44 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,8.82,4.77,12.86
+De 45 a 54 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,8.81,4.21,13.42
+De 55 a 64 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,7.79,4.16,11.27
+De 65 a 74 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,5.89,2.86,8.43
+De 75 a 84 años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,5.18,2.07,7.78
+De 85 y más años,Migraña o dolor de cabeza frecuente,dolor_cabeza_frecuente,5.31,3.25,6.43
+De 15 a 24 años,Osteoporosis,osteoporosis,0.1,0,0.2
+De 25 a 34 años,Osteoporosis,osteoporosis,0.26,0.11,0.4
+De 35 a 44 años,Osteoporosis,osteoporosis,0.14,0,0.28
+De 45 a 54 años,Osteoporosis,osteoporosis,1.01,0.33,1.69
+De 55 a 64 años,Osteoporosis,osteoporosis,4.3,1.25,7.24
+De 65 a 74 años,Osteoporosis,osteoporosis,8.95,1.45,15.25
+De 75 a 84 años,Osteoporosis,osteoporosis,12.04,2.6,20.04
+De 85 y más años,Osteoporosis,osteoporosis,15.27,4.18,21.19
+De 15 a 24 años,Otras enfermedades del corazón,otras_enfermedades_corazon,0.63,0.5,0.78
+De 25 a 34 años,Otras enfermedades del corazón,otras_enfermedades_corazon,0.91,0.8,1.01
+De 35 a 44 años,Otras enfermedades del corazón,otras_enfermedades_corazon,1.18,1.05,1.3
+De 45 a 54 años,Otras enfermedades del corazón,otras_enfermedades_corazon,2.12,2.47,1.77
+De 55 a 64 años,Otras enfermedades del corazón,otras_enfermedades_corazon,3.55,4.4,2.73
+De 65 a 74 años,Otras enfermedades del corazón,otras_enfermedades_corazon,7.98,9.4,6.79
+De 75 a 84 años,Otras enfermedades del corazón,otras_enfermedades_corazon,15.4,15.35,15.43
+De 85 y más años,Otras enfermedades del corazón,otras_enfermedades_corazon,19.98,18.31,20.89
+De 15 a 24 años,Otros problemas mentales,otros_problemas_mentales,1.59,1.76,1.42
+De 25 a 34 años,Otros problemas mentales,otros_problemas_mentales,0.85,0.76,0.93
+De 35 a 44 años,Otros problemas mentales,otros_problemas_mentales,1.15,1.86,0.44
+De 45 a 54 años,Otros problemas mentales,otros_problemas_mentales,1.25,1.56,0.94
+De 55 a 64 años,Otros problemas mentales,otros_problemas_mentales,1.38,1.46,1.3
+De 65 a 74 años,Otros problemas mentales,otros_problemas_mentales,1.26,0.88,1.57
+De 75 a 84 años,Otros problemas mentales,otros_problemas_mentales,3.65,2.91,4.28
+De 85 y más años,Otros problemas mentales,otros_problemas_mentales,9.27,7.41,10.28
+De 15 a 24 años,Problemas crónicos de piel,problemas_piel,3.25,1.95,4.62
+De 25 a 34 años,Problemas crónicos de piel,problemas_piel,4.14,3.14,5.14
+De 35 a 44 años,Problemas crónicos de piel,problemas_piel,3.31,2.95,3.68
+De 45 a 54 años,Problemas crónicos de piel,problemas_piel,3.67,2.33,5.02
+De 55 a 64 años,Problemas crónicos de piel,problemas_piel,4.28,3.84,4.69
+De 65 a 74 años,Problemas crónicos de piel,problemas_piel,4.04,3.72,4.3
+De 75 a 84 años,Problemas crónicos de piel,problemas_piel,6.08,7.1,5.22
+De 85 y más años,Problemas crónicos de piel,problemas_piel,6.86,8.22,6.13
+De 15 a 24 años,Problemas de próstata (solo hombres),problemas_prostata,0,0,0
+De 25 a 34 años,Problemas de próstata (solo hombres),problemas_prostata,0,0.2,0
+De 35 a 44 años,Problemas de próstata (solo hombres),problemas_prostata,0,0.15,0
+De 45 a 54 años,Problemas de próstata (solo hombres),problemas_prostata,0,0.67,0
+De 55 a 64 años,Problemas de próstata (solo hombres),problemas_prostata,0,6.06,0
+De 65 a 74 años,Problemas de próstata (solo hombres),problemas_prostata,0,12.43,0
+De 75 a 84 años,Problemas de próstata (solo hombres),problemas_prostata,0,22.35,0
+De 85 y más años,Problemas de próstata (solo hombres),problemas_prostata,0,30.03,0
+De 15 a 24 años,Problemas de riñón,problemas_rinon,0.6,0.35,0.87
+De 25 a 34 años,Problemas de riñón,problemas_rinon,1.42,1.06,1.79
+De 35 a 44 años,Problemas de riñón,problemas_rinon,1.36,1.56,1.16
+De 45 a 54 años,Problemas de riñón,problemas_rinon,2.2,2.07,2.34
+De 55 a 64 años,Problemas de riñón,problemas_rinon,2.71,3.25,2.2
+De 65 a 74 años,Problemas de riñón,problemas_rinon,3.82,4.42,3.32
+De 75 a 84 años,Problemas de riñón,problemas_rinon,5.32,6.12,4.65
+De 85 y más años,Problemas de riñón,problemas_rinon,7.74,6.23,8.55
+De 15 a 24 años,Problemas de tiroides,problemas_tiroides,1.47,1.2,1.76
+De 25 a 34 años,Problemas de tiroides,problemas_tiroides,2.34,0.55,4.14
+De 35 a 44 años,Problemas de tiroides,problemas_tiroides,4.09,0.94,7.23
+De 45 a 54 años,Problemas de tiroides,problemas_tiroides,5.46,0.95,9.98
+De 55 a 64 años,Problemas de tiroides,problemas_tiroides,8.19,2.18,13.95
+De 65 a 74 años,Problemas de tiroides,problemas_tiroides,8.01,2.8,12.4
+De 75 a 84 años,Problemas de tiroides,problemas_tiroides,7.08,2.4,11.03
+De 85 y más años,Problemas de tiroides,problemas_tiroides,6.76,2.15,9.23
+De 15 a 24 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,0.21
+De 25 a 34 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,0.13
+De 35 a 44 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,0.93
+De 45 a 54 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,11.27
+De 55 a 64 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,4.79
+De 65 a 74 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,1.18
+De 75 a 84 años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,0.33
+De 85 y más años,Problemas del periodo menopáusico (solo mujeres),problemas_menopausico,0,0,0.69
+De 15 a 24 años,Tensión alta,tension_alta,1.17,1.95,0.34
+De 25 a 34 años,Tensión alta,tension_alta,1.87,2.49,1.24
+De 35 a 44 años,Tensión alta,tension_alta,4.35,5.33,3.37
+De 45 a 54 años,Tensión alta,tension_alta,12.74,14.6,10.88
+De 55 a 64 años,Tensión alta,tension_alta,28.12,30.37,25.97
+De 65 a 74 años,Tensión alta,tension_alta,44.99,47.51,42.88
+De 75 a 84 años,Tensión alta,tension_alta,55.86,55.15,56.46
+De 85 y más años,Tensión alta,tension_alta,59.92,52.26,64.01
+De 15 a 24 años,Tumores malignos,tumores_malignos,0.14,0.12,0.17
+De 25 a 34 años,Tumores malignos,tumores_malignos,0.2,0,0.4
+De 35 a 44 años,Tumores malignos,tumores_malignos,0.63,0.38,0.88
+De 45 a 54 años,Tumores malignos,tumores_malignos,1.42,0.87,1.97
+De 55 a 64 años,Tumores malignos,tumores_malignos,1.69,1.4,1.96
+De 65 a 74 años,Tumores malignos,tumores_malignos,4.4,4.85,4.02
+De 75 a 84 años,Tumores malignos,tumores_malignos,4.74,6.77,3.02
+De 85 y más años,Tumores malignos,tumores_malignos,3.4,4.45,2.84
+De 15 a 24 años,Úlcera de estómago o duodeno,ulcera,0.11,0,0.22
+De 25 a 34 años,Úlcera de estómago o duodeno,ulcera,0.74,0.59,0.88
+De 35 a 44 años,Úlcera de estómago o duodeno,ulcera,1.01,0.82,1.2
+De 45 a 54 años,Úlcera de estómago o duodeno,ulcera,1.29,1.2,1.37
+De 55 a 64 años,Úlcera de estómago o duodeno,ulcera,1.87,1.39,2.32
+De 65 a 74 años,Úlcera de estómago o duodeno,ulcera,1.62,1.4,1.81
+De 75 a 84 años,Úlcera de estómago o duodeno,ulcera,2.9,2.05,3.61
+De 85 y más años,Úlcera de estómago o duodeno,ulcera,3.17,2.76,3.4
+De 15 a 24 años,Varices en las piernas,varices_piernas,0.51,0.21,0.83
+De 25 a 34 años,Varices en las piernas,varices_piernas,3.31,0.73,5.9
+De 35 a 44 años,Varices en las piernas,varices_piernas,6.05,2.63,9.47
+De 45 a 54 años,Varices en las piernas,varices_piernas,10.09,5.19,15.02
+De 55 a 64 años,Varices en las piernas,varices_piernas,12.81,7.66,17.74
+De 65 a 74 años,Varices en las piernas,varices_piernas,17.74,9.14,24.95
+De 75 a 84 años,Varices en las piernas,varices_piernas,20.31,10.54,28.53
+De 85 y más años,Varices en las piernas,varices_piernas,21.12,11.46,26.32
