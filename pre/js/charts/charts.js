@@ -34,7 +34,7 @@ export function initChart(iframe) {
         //////// VISUALIZACIÓN
 
         /// ELEMENTOS GENÉRICOS
-        let margin = {top: 10, right: 10, bottom: 20, left: 50},
+        let margin = {top: 10, right: 10, bottom: 20, left: 30},
             width = document.getElementById('chart').clientWidth - margin.left - margin.right,
             height = document.getElementById('chart').clientHeight - margin.top - margin.bottom;
 
@@ -79,15 +79,14 @@ export function initChart(iframe) {
 
         /// FUNCIONES
         function init(type) {
-            let auxData = data.filter(function(item) { if(item.Tipo == type){ return item; } });
-
-            console.log(auxData);
+            let auxData = data.filter(function(item) { if(item.enfermedad_2 == type){ return item; } });
 
             svg.append("g")
                 .selectAll("g")
                 .data(auxData)
                 .enter()
                 .append("g")
+                .attr('class', 'prueba_1')
                 .attr("transform", function(d) { return "translate(" + x(d.Edad) + ",0)"; })
                 .selectAll("rect")
                 .data(function(d) { return tipos.map(function(key) { return {key: key, value: d[key]}; }); })
@@ -106,13 +105,21 @@ export function initChart(iframe) {
         }
 
         function updateChart(type) {
-            let auxData = data.filter(function(item) { if(item.Tipo == type){ return item; } });
+            let auxData = data.filter(function(item) { if(item.enfermedad_2 == type){ return item; } });
 
-            chart
-                .selectAll(".prueba")
+            console.log(auxData);
+
+            svg.selectAll('.prueba_1')
                 .data(auxData)
+                .selectAll(".prueba")
+                .data(function(d) { return tipos.map(function(key) { return {key: key, value: d[key]}; }); })
+                .attr("x", function(d) { return xSubgroup(d.key); })
+                .attr("width", xSubgroup.bandwidth())
+                .attr("fill", function(d) { return color(d.key); })
+                .attr("y", function(d) { return y(0); })                
+                .attr("height", function(d) { return height - y(0); })
                 .transition()
-                .duration(1500)
+                .duration(2000)
                 .attr("y", function(d) { return y(d.value); })                
                 .attr("height", function(d) { return height - y(d.value); });
         }
