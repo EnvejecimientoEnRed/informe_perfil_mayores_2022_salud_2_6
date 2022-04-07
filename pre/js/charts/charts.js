@@ -107,8 +107,6 @@ export function initChart(iframe) {
         function updateChart(type) {
             let auxData = data.filter(function(item) { if(item.enfermedad_2 == type){ return item; } });
 
-            console.log(auxData);
-
             svg.selectAll('.prueba_1')
                 .data(auxData)
                 .selectAll(".prueba")
