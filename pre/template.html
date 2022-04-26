@@ -18,8 +18,9 @@
             <section class="content b-chart active" id="chartBlock">
                 <div class="b-title">
                     <h1 class="title">Figura 2.6. Personas con enfermedades crónicas por sexo y grupo de edad en España, 2020</h1>
-                    <h2 class="subtitle">Gráfico 17/2022. Datos en porcentajes (%). Todas las enfermedades comparten la misma escala vertical.</h2>
+                    <h2 class="subtitle">Gráfico 17/2022. Por defecto, todas las enfermedades comparten la misma escala vertical (al 70%)</h2>
                 </div>
+                <p class="text__specification">Seleccione la enfermedad que desea visualizar. También puede modificar el eje Y para ajustarlo a una escala individual y observar así, con más detalle, la comparativa por edad para dicha enfermedad.</p>
                 <div class="chart__logics">
                     <div class="chart__legend">
                         <span class="chart__legend--item primary_1">Hombres</span>
@@ -33,7 +34,7 @@
                     </div>                  
                 </div>
                 <div class="chart__logics--bis">
-                    <select id="enfermedad_cronica">
+                    <select class="select" id="enfermedad_cronica">
                         <option value="alergia_cronica">Alergia crónica</option>
                         <option value="angina_pecho">Angina de pecho</option>
                         <option value="ansiedad_cronica">Ansiedad crónica</option>
@@ -67,8 +68,13 @@
                         <option value="ulcera">Úlcera de estómago</option>
                         <option value="varices_piernas">Varices en las piernas</option>
                     </select>
+                    <button class="btn__yaxis" id="change_yaxis">Eje Y variable</button>
                 </div>
-                <div class="chart__viz" id="chart"></div>
+                <div class="chart__viz">
+                    <p class="text__yaxis">Porcentaje</p>
+                    <div class="chart" id="chart"></div>
+                    <p class="text__xaxis">Grupos de edad</p>
+                </div>
                 <!-- Pie de gráfico -->
                 <div class="chart__footer">
                     <div class="chart__source">

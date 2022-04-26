@@ -1,23 +1,16 @@
 //Desarrollo de las visualizaciones
 import * as d3 from 'd3';
-//import { numberWithCommas2 } from './helpers';
-//import { getInTooltip, getOutTooltip, positionTooltip } from './modules/tooltip';
+import { numberWithCommas3 } from '../helpers';
+import { getInTooltip, getOutTooltip, positionTooltip } from '../modules/tooltip';
 import { setChartHeight } from '../modules/height';
 import { setChartCanvas, setChartCanvasImage } from '../modules/canvas-image';
 import { setRRSSLinks } from '../modules/rrss';
 import { setFixedIframeUrl } from './chart_helpers';
 
 //Colores fijos
-const COLOR_PRIMARY_1 = '#F8B05C', 
-COLOR_PRIMARY_2 = '#E37A42',
-COLOR_COMP_1 = '#528FAD', 
-COLOR_COMP_2 = '#AADCE0',
-COLOR_GREY_1 = '#D6D6D6', 
-COLOR_GREY_2 = '#A3A3A3',
-COLOR_ANAG__PRIM_1 = '#BA9D5F', 
-COLOR_ANAG_PRIM_2 = '#9E6C51',
-COLOR_ANAG_PRIM_3 = '#9E3515',
-COLOR_ANAG_COMP_1 = '#1C5A5E';
+const COLOR_PRIMARY_1 = '#F8B05C',
+COLOR_COMP_1 = '#528FAD';
+let tooltip = d3.select('#tooltip');
 
 export function initChart(iframe) {
     ///Lectura de datos
@@ -25,16 +18,29 @@ export function initChart(iframe) {
         if (error) throw error;
 
         //////// SELECTOR
-        let tipoEnfermedad = 'tension_alta'
+        let tipoEnfermedad = 'tension_alta', tipoBtn = 'fijo';
         document.getElementById('enfermedad_cronica').addEventListener('change', function(e) {
             tipoEnfermedad = e.target.value;
-            updateChart(tipoEnfermedad);
+            updateAxis(tipoBtn, tipoEnfermedad);
+        });
+
+        //////// CAMBIO EJE Y
+        document.getElementById('change_yaxis').addEventListener('click', function(e) {
+            //Cambiamos eje
+
+            if(tipoBtn == 'fijo') {
+                tipoBtn = 'variable';
+            } else {
+                tipoBtn = 'fijo';
+            }
+
+            updateAxis(tipoBtn, tipoEnfermedad);
         });
 
         //////// VISUALIZACIÓN
 
         /// ELEMENTOS GENÉRICOS
-        let margin = {top: 10, right: 10, bottom: 20, left: 30},
+        let margin = {top: 10, right: 10, bottom: 25, left: 30},
             width = document.getElementById('chart').clientWidth - margin.left - margin.right,
             height = document.getElementById('chart').clientHeight - margin.top - margin.bottom;
 
@@ -55,6 +61,8 @@ export function initChart(iframe) {
 
         let xAxis = function(g) {
             g.call(d3.axisBottom(x));
+            g.call(function(g){g.selectAll('.tick line').remove()});
+            g.call(function(g){g.select('.domain').remove()});
         }
 
         svg.append("g")
@@ -64,8 +72,26 @@ export function initChart(iframe) {
         let y = d3.scaleLinear()
             .domain([0, 70])
             .range([ height, 0 ]);
+        
+        let yAxis = function(svg) {
+            svg.call(d3.axisLeft(y).ticks(5).tickFormat(function(d,i) { return numberWithCommas3(d); }));
+            svg.call(function(g) {
+                g.call(function(g){
+                    g.selectAll('.tick line')
+                        .attr('class', function(d,i) {
+                            if (d == 0) {
+                                return 'line-special';
+                            }
+                        })
+                        .attr('x1', '0%')
+                        .attr('x2', `${width}`)
+                });
+            });
+        }
+
         svg.append("g")
-            .call(d3.axisLeft(y));
+            .attr("class", "yaxis")
+            .call(yAxis);
 
         let xSubgroup = d3.scaleBand()
             .domain(tipos)
@@ -86,36 +112,60 @@ export function initChart(iframe) {
                 .data(auxData)
                 .enter()
                 .append("g")
-                .attr('class', 'prueba_1')
                 .attr("transform", function(d) { return "translate(" + x(d.Edad) + ",0)"; })
+                .attr('class', function(d) {
+                    return 'grupo grupo_' + d.Edad;
+                })
                 .selectAll("rect")
                 .data(function(d) { return tipos.map(function(key) { return {key: key, value: d[key]}; }); })
                 .enter()
                 .append("rect")
-                .attr('class', 'prueba')
+                .attr('class', function(d) {
+                    return 'rect rect_' + d.key;
+                })
                 .attr("x", function(d) { return xSubgroup(d.key); })
                 .attr("width", xSubgroup.bandwidth())
                 .attr("fill", function(d) { return color(d.key); })
                 .attr("y", function(d) { return y(0); })                
                 .attr("height", function(d) { return height - y(0); })
-                .transition()
-                .duration(2000)
-                .attr("y", function(d) { return y(d.value); })                
-                .attr("height", function(d) { return height - y(d.value); });
-        }
+                .on('mouseover', function(d,i,e) {
+                    //Opacidad en barras
+                    let css = e[i].getAttribute('class').split(' ')[1];
+                    let bars = svg.selectAll('.rect');                    
+            
+                    bars.each(function() {
+                        this.style.opacity = '0.4';
+                        let split = this.getAttribute('class').split(" ")[1];
+                        if(split == `${css}`) {
+                            this.style.opacity = '1';
+                        }
+                    });
 
-        function updateChart(type) {
-            let auxData = data.filter(function(item) { if(item.enfermedad_2 == type){ return item; } });
+                    //Tooltip > Recuperamos el año de referencia
+                    let currentAge = this.parentNode.classList.value.split(' ')[1];
+                    let enfermedad = data.filter(function(item) { if (item.enfermedad_2 == tipoEnfermedad) { return item; } });
+                    enfermedad = enfermedad[0];
 
-            svg.selectAll('.prueba_1')
-                .data(auxData)
-                .selectAll(".prueba")
-                .data(function(d) { return tipos.map(function(key) { return {key: key, value: d[key]}; }); })
-                .attr("x", function(d) { return xSubgroup(d.key); })
-                .attr("width", xSubgroup.bandwidth())
-                .attr("fill", function(d) { return color(d.key); })
-                .attr("y", function(d) { return y(0); })                
-                .attr("height", function(d) { return height - y(0); })
+                    let html = '<p class="chart__tooltip--title">' + enfermedad.Enfermedades + '</p>' + 
+                            '<p class="chart__tooltip--text">El <b>' + numberWithCommas3(d.value) + '%</b> de <b>' + d.key + '</b> en este grupo de edad (<b>' + currentAge.split('_')[1] + '</b>) sufren este tipo de enfermedad crónica</p>';
+                    
+                    tooltip.html(html);
+
+                    //Tooltip
+                    positionTooltip(window.event, tooltip);
+                    getInTooltip(tooltip);
+
+                })
+                .on('mouseout', function(d,i,e) {
+                    //Quitamos los estilos de la línea
+                    let bars = svg.selectAll('.rect');
+                    bars.each(function() {
+                        this.style.opacity = '1';
+                    });
+                
+                    //Quitamos el tooltip
+                    getOutTooltip(tooltip); 
+                })
                 .transition()
                 .duration(2000)
                 .attr("y", function(d) { return y(d.value); })                
@@ -123,7 +173,67 @@ export function initChart(iframe) {
         }
 
         function animateChart() {
-            svg.selectAll(".prueba")
+            svg.selectAll(".rect")
+                .attr("x", function(d) { return xSubgroup(d.key); })
+                .attr("width", xSubgroup.bandwidth())
+                .attr("fill", function(d) { return color(d.key); })
+                .attr("y", function(d) { return y(0); })                
+                .attr("height", function(d) { return height - y(0); })
+                .transition()
+                .duration(2000)
+                .attr("y", function(d) { return y(d.value); })                
+                .attr("height", function(d) { return height - y(d.value); });
+        }
+
+        /// ACTUALIZACIONES
+        function updateAxis(tipoBtn, tipo) {
+            //Nos quedamos con los datos específicos
+            let auxData = data.filter(function(item) { if(item.enfermedad_2 == tipo){ return item; } });
+            let maxAux = 0;
+            if (tipo == 'artrosis' || tipo == 'problemas_prostata') {
+                maxAux = d3.max(auxData, function(d) { return +d.hombres; });
+            } else if (tipo == 'osteoporosis' || tipo == 'problemas_menopausico') {
+                maxAux = d3.max(auxData, function(d) { return +d.mujeres; });
+            } else {
+                maxAux = d3.max(auxData, function(d) { return +d.total; });
+            }
+            let yMax = 70;
+
+            if(tipoBtn != 'fijo') {
+
+                if(maxAux < 20) {
+                    yMax = maxAux + 5;
+                } else {
+                    yMax = maxAux + 10;
+                }
+
+                //Modificamos el texto del botón
+                document.getElementById('change_yaxis').textContent = 'Eje Y fijo';
+
+            } else {
+
+                //Modificamos el texto del botón
+                document.getElementById('change_yaxis').textContent = 'Eje Y variable';
+
+            }
+
+            //Modificamos el eje Y de la visualización
+            y.domain([0,Math.ceil(yMax)]);
+
+            svg.select(".yaxis")
+                .transition()
+                .duration(2000)
+                .call(yAxis);
+
+            //Actualizamos el gráfico
+            updateChart(auxData);
+        }
+
+        function updateChart(data) {
+            svg.selectAll('.grupo')
+                .data(data)
+                .selectAll(".rect")
+                .data(function(d) { return tipos.map(function(key) { return {key: key, value: d[key]}; }); })
                 .attr("x", function(d) { return xSubgroup(d.key); })
                 .attr("width", xSubgroup.bandwidth())
                 .attr("fill", function(d) { return color(d.key); })

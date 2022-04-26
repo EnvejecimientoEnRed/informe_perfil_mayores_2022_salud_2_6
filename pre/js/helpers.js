@@ -57,4 +57,8 @@ function numberWithCommas2(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");       
 }
 
-export { isMobile, isSmallMobile, isDevice, isElementInViewport, percentageOfElement, getNumberWithCommas, numberWithCommas, numberWithCommas2 };
+function numberWithCommas3(x) {
+    return x.toString().replace(/\./g, ',').replace(/\B(?=(\d{3})+(?!\d))/g, "."); 
+}
+
+export { isMobile, isSmallMobile, isDevice, isElementInViewport, percentageOfElement, numberWithCommas, numberWithCommas2, numberWithCommas3 };

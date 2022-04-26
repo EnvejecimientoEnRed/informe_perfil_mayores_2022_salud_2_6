@@ -1,5 +1,5 @@
 import html2canvas from 'html2canvas';
-let innerCanvas, innerCustomCanvas;
+let innerCanvas;
 
 function setChartCanvas() {
     html2canvas(document.querySelector("#chartBlock"), {width: document.querySelector("#chartBlock").clientWidth, height: document.querySelector("#chartBlock").clientHeight, imageTimeout: 8000, useCORS: true}).then(canvas => { innerCanvas = canvas; });
