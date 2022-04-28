@@ -40,7 +40,7 @@ export function initChart() {
         //////// VISUALIZACIÓN
 
         /// ELEMENTOS GENÉRICOS
-        let margin = {top: 10, right: 10, bottom: 25, left: 30},
+        let margin = {top: 12.5, right: 10, bottom: 25, left: 30},
             width = document.getElementById('chart').clientWidth - margin.left - margin.right,
             height = document.getElementById('chart').clientHeight - margin.top - margin.bottom;
 
