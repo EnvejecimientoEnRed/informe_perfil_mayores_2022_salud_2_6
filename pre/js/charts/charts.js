@@ -208,12 +208,12 @@ export function initChart() {
                 }
 
                 //Modificamos el texto del botón
-                document.getElementById('change_yaxis').textContent = 'Eje Y fijo';
+                document.getElementById('change_yaxis').textContent = 'Cambiar a eje fijo';
 
             } else {
 
                 //Modificamos el texto del botón
-                document.getElementById('change_yaxis').textContent = 'Eje Y variable';
+                document.getElementById('change_yaxis').textContent = 'Cambiar a eje variable';
 
             }
 
